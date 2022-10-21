@@ -1,0 +1,172 @@
+body {
+    padding-right: 0rem;
+    padding-left: 0rem;
+    padding-top: 3rem;
+    padding-bottom: 0px;
+    color: #5a5a5a;
+    background: black;
+  }
+
+  #current-time{
+    width:100%;
+    margin-top: 25px;
+    padding-right: 15px;
+    font-weight: bold;
+    text-align:right;
+    color:white;
+  }
+
+  #current-date{
+    width:100%;
+    margin-top: 5px;
+    padding-right: 15px;
+    font-weight: bold;
+    text-align:right;
+    color:white;
+  }
+
+  #mathematics{
+    width:100%;
+    margin-top: 5px;
+    padding-right: 15px;
+    font-weight: bold;
+    text-align:right;
+    color:white;
+  }
+
+  .navbar-toggler{
+    border-color: white;
+  }
+
+  .navbar-toggler-icon{
+   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+
+  .logo {
+     float: left;
+     left: 100px;
+     border-radius: 50px;
+  }
+
+  .logo img{
+    width: 400px;
+    margin-left: 25px;
+  }
+
+  .intro{
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    margin-left: 2rem;
+    clear:left;
+  }
+
+  .magic{
+    font-size: 1.25rem;
+    font-family: Roboto;
+    color: white;
+  }
+
+  .answer{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+  }
+
+  .answer2{
+    font-size: 1.25rem;
+    font-family: Roboto;
+    color: white;
+  }
+
+  .outro{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    margin-left: 2rem;
+  }
+
+  .magic2{
+    font-size: 1.25rem;
+    font-family: Roboto;
+    color: white;
+  }
+
+  .nav-link:hover {
+    text-decoration: underline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .navbar-collapse{
+    justify-content:end;
+  }
+
+  .numbers {
+    display:inline-flex;
+    flex-direction: row;
+  }
+
+  .numbers img{
+    left: 20px;
+    margin: 20px;
+    border: 5px solid cyan;
+    border-radius: 10px;
+  }
+
+  .check {
+    width: 100px;
+    font-size: 1.25rem;
+    font-family: Roboto;
+    color: black;
+    background: cyan;
+    margin-left: 20px;
+    border-radius: 5px;
+  }
+
+  .checkbox {
+    margin-left:10px;
+    transform: scale(1.5);
+    cursor:pointer;
+  }
+
+  label {
+    margin-left: 10px;
+  }
+
+    @media (max-width: 768px) {
+    .container-fluid {
+      background-color: none;
+    }
+
+    .nav-link.active {
+      color: white !important;
+      font-weight: bold;
+      background-color: black;
+      width: 170px;
+      border-radius: 15px;
+      margin-left: 0px;
+    }
+
+    .bg-secondary {
+      --bs-bg-opacity: 0;
+    }
+
+    .numbers img {
+      width: 430px;
+      height: 125px;
+    }
+
+    .numbers {
+      display:block;
+    }
+
+    .logo img{
+      width: 300px;
+      margin-left: 10px;
+    }  
+
+    .intro{
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+      margin-left: 2rem;
+      clear:left;
+    }
+  }

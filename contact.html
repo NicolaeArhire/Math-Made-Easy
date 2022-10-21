@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Learning - Contact Us</title>
+    <link rel="stylesheet" href="./bootstrap.min.css" >
+    <link rel="stylesheet" href="./contact.css">
+    <link rel="shortcut icon" href="https://img.icons8.com/color/344/help--v1.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-secondary">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./home.html">Home</a>
+                </li>
+              <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./references.html">References</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./game.html">Let's play a game</a>
+              </li>
+            </ul>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-0 mb-2 mb-md-0">
+              <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./about.html">About</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./contact.html">Contact</a>
+              </li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+    <div class="logo">
+    <img src="./img/logo.png" style="border-radius:20px" alt="" srcset="">
+    </div>
+    <div id="current-time"></div>
+    <div id="current-date"></div>
+    <div id="mathematics"></div>
+    <div class="contact container">
+        <form action="https://formspree.io/f/xzbowpjq" method="POST">
+            <div class="type">
+                <div class="type-txt">
+                    <h1 class="first-txt">Get in touch with us</h1>
+                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur ipsum minima consequuntur.</span>
+                    <h3>United States: +43 656-234-5647</h3>
+                    <h3>Romania: +40 754-235-6517</h3>
+                    <h3>Poland: +47 326-564-6534</h3>
+                    <h3>Ukraine: +41 637-634-5784</h3>
+                    <div class="d-flex justify-content-start social_icon">
+                      <a href="https://twitter.com/freeCodeCamp" target="blank" style="color:cyan"><i class="fab fa-twitter"></i></a>
+                      <a href="https://www.youtube.com/c/Freecodecamp" target="blank" style="color:red"><i class="fab fa-youtube"></i></a>
+                      <a href="https://www.facebook.com/freecodecamp" target="blank" style="color:rgb(14, 166, 226)"><i class="fab fa-facebook"></i></a>
+                      <a href="https://www.linkedin.com/school/free-code-camp" target="blank" style="color:rgb(10, 177, 243)"><i class="fab fa-linkedin"></i></a>
+                      <i class="fa-solid fa-square-a"></i>
+                    </div>
+                </div>
+                <div class="type-details">
+                  <input class="input-details" type="text" name="name" id="name" placeholder="Your Name" required>
+                  <input class="input-details" type="email" name="email" id="email" placeholder="Your E-mail" required>
+                  <textarea class="input-textarea" name="message" id="message" cols="52" rows="7" placeholder="Your Message" required></textarea>
+                  <button class="button-style">SEND MESSAGE</button>
+                </div>
+            </div>
+        </form>
+    </div> 
+    <script src="./bootstrap.bundle.min.js"></script>  
+    <script src="./contact.js"></script>     
+</body>
+</html>
+
+
+
