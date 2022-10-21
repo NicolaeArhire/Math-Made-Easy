@@ -67,19 +67,21 @@ body {
   }
 
   .answer{
+    display:flex;
     margin-top: 1rem;
     margin-bottom: 1rem;
     margin-left: 2rem;
+    color:white;
+    font-family: Roboto;
+    font-size: 1.25rem;
   }
 
-  .answer2{
-    font-size: 1.25rem;
-    font-family: Roboto;
-    color: white;
+  #secret {
+    color:yellow;
   }
 
   .outro{
-    margin-top: 4rem;
+    margin-top: 2rem;
     margin-bottom: 4rem;
     margin-left: 2rem;
   }
@@ -119,6 +121,43 @@ body {
     background: cyan;
     margin-left: 20px;
     border-radius: 5px;
+  }
+
+  .last{
+    display:flex;
+    justify-content: ro ;
+  }
+
+  .checkend {
+    display:flex;
+    width: 60px;
+    font-size: 1.25rem;
+    font-family: Roboto;
+    color: black;
+    background: yellow;
+    font-weight: bolder;
+    margin-left: 20px;
+    border-radius: 5px;
+  }
+
+  .checkend:active {
+    background-color: #3e8e41;
+    color:white;
+  }
+
+  .checkend2 {
+    width: 75px;
+    font-size: 1.25rem;
+    font-family: Roboto;
+    color: black;
+    background: yellow;
+    font-weight: bolder;
+    border-radius: 5px;
+  }
+
+  .checkend2:active {
+    background-color: #3e8e41;
+    color:white;
   }
 
   .checkbox {

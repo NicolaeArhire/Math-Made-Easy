@@ -60,50 +60,53 @@
 
 
  <div class="intro">
-     <p class="magic">In this mathemagical game you have to secretly choose a number between <b style="color:yellow">1</b> and <b style="color:yellow">60</b> and pick every one of the below cards that contain your number.
+     <p class="magic">In this mathemagical game you have to secretly choose a number between <b style="color:yellow">1</b> and <b style="color:yellow">60</b> and pick every one of the below cards that contain your number. Finally, press "Done".
        <br>Then, by magic and hours of studying math, i'll find out your number. Let's begin:</p>
  </div>
 
  <div class="numbers">
 <div class="no123">
- <form class="check">
+ <form class="check" name="xxx">
   <label for="card1">Card 1</label>
-  <input type="checkbox" class="checkbox" id="c1">
+  <input type="checkbox" class="checkbox" id="c1" name="zzz">
  </form>
   <img class="A" src="./game/A.png" width="700" height="180">
-  <form class="check">
+  <form class="check" name="xxx">
     <label for="card2">Card 2</label>
-    <input type="checkbox" class="checkbox" id="c2">
+    <input type="checkbox" class="checkbox" id="c2" name="zzz">
    </form>
     <img class="B" src="./game/B.png" width="700" height="180">
-  <form class="check">
+  <form class="check" name="xxx">
     <label for="card3">Card 3</label>
-    <input type="checkbox" class="checkbox" id="c3">
+    <input type="checkbox" class="checkbox" id="c3" name="zzz">
    </form>
     <img class="C" src="./game/C.png" width="700" height="180">
   </div>
   <div class="no456">
-  <form class="check">
+  <form class="check" name="xxx">
     <label for="card4">Card 4</label>
-    <input type="checkbox" class="checkbox" id="c4">
+    <input type="checkbox" class="checkbox" id="c4" name="zzz">
    </form>
     <img class="D" src="./game/D.png" width="700" height="180">
-  <form class="check">
+  <form class="check" name="xxx">
     <label for="card5">Card 5</label>
-    <input type="checkbox" class="checkbox" id="c5">
+    <input type="checkbox" class="checkbox" id="c5" name="zzz">
    </form>
     <img class="E" src="./game/E.png" width="700" height="180">
-  <form class="check">
+  <form class="check" name="xxx">
     <label for="card6">Card 6</label>
-    <input type="checkbox" class="checkbox" id="c6">
+    <input type="checkbox" class="checkbox" id="c6" name="zzz">
    </form>
     <img class="F" src="./game/F.png" width="700" height="180">
 </div>
  </div>
-
-
+<div class="last">
+  <button class="checkend" id="done">Done</button>
+  <button class="checkend2" id="reload" style="margin-left:20px" onClick="uncheckAll(document.xxx.zzz)">Reload</button>
+</div>
  <div class="answer">
-  <p class="answer2">And your secret number is.....</p>
+  <p>And your secret number is.....</p>
+  <div id="secret"></div>
 </div>
  <div class="outro">
      <p class="magic2">Start your math journey now and you can amaze your friends too.</p>
