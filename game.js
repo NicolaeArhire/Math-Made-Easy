@@ -20,9 +20,3 @@ if (currentday.getMonth()==2 && currentday.getDate()>14)
 
 const day = 1000*60*60*24;
 math.textContent = Math.abs(Math.ceil((math2.getTime()-currentday.getTime())/(day))+366) + ' days left until Maths Day!';
-
-let card = document.getElementById('c1');
-
-if(card.checked) {
-    console.log('brrrrrr');
-}
