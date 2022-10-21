@@ -1,2 +1,2 @@
 # Math-Made-Easy
-Handy tool made for practical use
+This project is made as a useful tool with educational purposes, handy for practical work.
