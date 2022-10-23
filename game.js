@@ -24,6 +24,7 @@ math.textContent = Math.abs(Math.ceil((math2.getTime()-currentday.getTime())/(da
 
 let magic = document.getElementById('secret');
 let done = document.getElementById('done');
+let gif = document.createElement('img');
 let card1 = document.getElementById('c1').value = 1;
 let card2 = document.getElementById('c2').value = 2;
 let card3 = document.getElementById('c3').value = 4;
@@ -31,17 +32,27 @@ let card4 = document.getElementById('c4').value = 8;
 let card5 = document.getElementById('c5').value = 16;
 let card6 = document.getElementById('c6').value = 32;
 
-if (done.checked) {
-    magic.textContent = '?????' + '. Awesome, right?';
-} else {
+
+
+// function uncheckAll (chk) {
+//     for (i=0; i<chk.length; i++) {
+//         chk[i].checked = false;
+//     }
+// }
+
+function showAnswer() {
+    if (document.getElementById('c1').checked = false) {
+        magic.textContent = card1 + card6;
+        document.getElementById("gif").style.display = 'none';
+    } else {
+        magic.textContent = card1 + card3;
+        document.getElementById("gif").style.display = 'none';
+    }    
+}
+
+function deleteAnswer() {
     magic.textContent = '';
+    document.getElementsByClassName('checkbox').checked = false;
+    document.getElementById("gif").style.display = 'flex';
+    document.getElementById("gif").style.width = "35";
 }
-
-console.log(card1.checked);
-
-function uncheckAll (chk) {
-    for (i=0; i<chk.length; i++) {
-        chk[i].checked = false;
-    }
-}
-

@@ -68,16 +68,31 @@ body {
 
   .answer{
     display:flex;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
     margin-left: 2rem;
     color:white;
     font-family: Roboto;
     font-size: 1.25rem;
+    vertical-align: middle;
+  }
+
+  .youranswer {
+    display:flex;
+    margin-top: 20px;
+    margin-bottom: 0;
+    align-items: center;
+  }
+
+  #gif {
+    margin-top: 20px;
   }
 
   #secret {
     color:yellow;
+    display:flex;
+    margin-top: 20px;
+    margin-bottom: 0;
+    align-items: center;
   }
 
   .outro{

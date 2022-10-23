@@ -68,7 +68,7 @@
 <div class="no123">
  <form class="check" name="xxx">
   <label for="card1">Card 1</label>
-  <input type="checkbox" class="checkbox" id="c1" name="zzz">
+  <input type="checkbox" class="checkbox" id="c1" name="Azzz">
  </form>
   <img class="A" src="./game/A.png" width="700" height="180">
   <form class="check" name="xxx">
@@ -101,15 +101,18 @@
 </div>
  </div>
 <div class="last">
-  <button class="checkend" id="done">Done</button>
-  <button class="checkend2" id="reload" style="margin-left:20px" onClick="uncheckAll(document.xxx.zzz)">Reload</button>
+  <button class="checkend" id="done" onclick="showAnswer()">Done</button>
+  <button class="checkend2" id="reload" style="margin-left:20px" onclick="deleteAnswer()">Reload</button>
 </div>
  <div class="answer">
-  <p>And your secret number is.....</p>
-  <div id="secret"></div>
+  <p class="youranswer">And your secret number is.....</p>
+  <div id="secret">
+  </div>
+  <img src="./img/Spinner-1s-100px.gif" id="gif" alt="" srcset="" width="35">
+
 </div>
  <div class="outro">
-     <p class="magic2">Start your math journey now and you can amaze your friends too.</p>
+     <p class="magic2">Awesome, right? <br>Start your math journey now and you can amaze your friends too.</p>
        <p class="magic2" style="color:yellow; text-decoration: underline">Goodluck!</p>
  </div>
 
