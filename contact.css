@@ -9,7 +9,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Poppins", sans-serif;
     background:black;
 }
 
@@ -139,8 +138,14 @@ body {
 
 .nav-link:hover {
     text-decoration: underline;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
+    color: rgb(12, 12, 14) !important;
+    font-weight: bold;
+}
+
+.navbar-collapse{
+    flex-basis: 100% !important;
+    justify-content: space-around !important;
+}
 
 .button-style:hover {
     color: black !important;
@@ -199,10 +204,6 @@ body {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
    }
 
-  .navbar-collapse{
-    justify-content:end;
-  }
-
 @media (max-width: 500px) {
     .type {
         display: flex;
@@ -246,14 +247,18 @@ body {
       background-color: none;
     }
  
-    .nav-link.active {
-      color: white !important;
-      font-weight: bold;
-      background-color: black;
-      width: 170px;
-      border-radius: 15px;
-      margin-left: 0px;
-    }
+    .navbar-collapse{
+        background:none;
+      }
+    
+      .nav-link.active {
+        color: white !important;
+        font-weight: bold;
+        background-color: black;
+        opacity: 0.6;
+        width: 150px;
+        margin-left: 0px;
+      }
  
     .bg-secondary {
       --bs-bg-opacity: 0;

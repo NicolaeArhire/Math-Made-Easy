@@ -9,7 +9,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Poppins", sans-serif;
     background:black;
 }
 
@@ -44,9 +43,15 @@ body {
 }
 
 .nav-link:hover {
-    text-decoration: underline;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
+  text-decoration: underline;
+  color: rgb(12, 12, 14) !important;
+  font-weight: bold;
+}
+
+.navbar-collapse{
+  flex-basis: 100% !important;
+  justify-content: space-around !important;
+}
 
   .navbar-toggler{
     border-color: white;
@@ -131,12 +136,15 @@ body {
       background-color: none;
     }
  
+    .navbar-collapse{
+      background:none;
+    }
+  
     .nav-link.active {
       color: white !important;
       font-weight: bold;
       background-color: black;
-      width: 170px;
-      border-radius: 15px;
+      width: 150px;
       margin-left: 0px;
     }
  

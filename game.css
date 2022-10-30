@@ -109,11 +109,13 @@ body {
 
   .nav-link:hover {
     text-decoration: underline;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(12, 12, 14) !important;
+    font-weight: bold;
   }
 
   .navbar-collapse{
-    justify-content:end;
+    flex-basis: 100% !important;
+    justify-content: space-around !important;
   }
 
   .numbers {
@@ -190,12 +192,16 @@ body {
       background-color: none;
     }
 
+    .navbar-collapse{
+      background:none;
+    }
+  
     .nav-link.active {
       color: white !important;
       font-weight: bold;
       background-color: black;
-      width: 170px;
-      border-radius: 15px;
+      opacity: 0.6;
+      width: 150px;
       margin-left: 0px;
     }
 
