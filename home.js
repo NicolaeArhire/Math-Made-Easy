@@ -16,14 +16,12 @@ hiddenElements.forEach((el) => {
 
 let time = document.getElementById('current-time');
 
-setInterval(() =>{
-    let d = new Date()
-    time.innerHTML = d.toLocaleTimeString();
-},1000)
+setInterval(() => {
+    time.innerHTML = new Date().toLocaleTimeString();
+},10)
 
 let date = document.getElementById('current-date');
-let dd = new Date()
-date.innerHTML = dd.toLocaleDateString();
+date.innerHTML = new Date().toLocaleDateString();
 
 // const locationEl = document.getElementById('location')
 

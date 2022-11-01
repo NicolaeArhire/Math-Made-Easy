@@ -176,8 +176,7 @@ body {
 
   .nav-link:hover {
     text-decoration: underline;
-    color: rgb(12, 12, 14) !important;
-    font-weight: bold;
+    color: rgb(0, 0, 0) !important;
   }
 
   .navbar-collapse{
@@ -226,7 +225,7 @@ body {
     border: 0;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
-    opacity: 5.5;
+    opacity: 1;
     transition: opacity 5.6s ease;
     border-radius: 100%;
 }

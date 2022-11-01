@@ -138,8 +138,7 @@ body {
 
 .nav-link:hover {
     text-decoration: underline;
-    color: rgb(12, 12, 14) !important;
-    font-weight: bold;
+    color: rgb(0, 0, 0) !important;
 }
 
 .navbar-collapse{
