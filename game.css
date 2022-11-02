@@ -199,7 +199,7 @@ body {
       color: white !important;
       font-weight: bold;
       background-color: black;
-      opacity: 0.6;
+      /* opacity: 0.6; */
       width: 150px;
       margin-left: 0px;
     }
@@ -218,7 +218,7 @@ body {
     }
 
     .logo img{
-      width: 300px;
+      width: 220px;
       margin-left: 10px;
     }  
 
@@ -227,5 +227,12 @@ body {
       margin-bottom: 3rem;
       margin-left: 2rem;
       clear:left;
+    }
+  }
+
+  @media (max-width: 500px) {
+     .numbers img {
+      width: 350px;
+      height: 117px;
     }
   }
