@@ -6,7 +6,7 @@
 }
 
 body {
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     background:black;
@@ -36,9 +36,8 @@ body {
 }
 
 .type-txt a{
-    font-size: 60px;
+    font-size: 40px;
     margin-left: 20px;
-    color: yellow;
 }
     
 .type-txt a:hover{
@@ -62,7 +61,8 @@ body {
     color: white;
     font-size: 30px;
     letter-spacing: 1.5px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 0;
     color: var(--light-black);
     text-decoration: underline;
 }
@@ -73,9 +73,16 @@ body {
 }
 
 .type .type-txt h3 {
-    font-size: 22px;
+    font-size: 16px;
     font-weight: 600;
     margin: 15px 0;
+    color: white;
+}
+
+.type .type-txt h3:last-of-type {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0;
     color: white;
 }
 
@@ -152,15 +159,17 @@ body {
 }
 
 .logo {
-    float: left;
+    /* float: left; */
     left: 100px;
     border-radius: 50px;
  }
 
- .logo img{
-   width: 400px;
-   margin-left: 25px;
- }
+.logo img{
+    width: 400px;
+    margin-top: 73px;
+    margin-left: 25px;
+    border-radius: 20px;
+}
 
 #current-time{
     position: absolute;
@@ -171,9 +180,9 @@ body {
     font-weight: bold;
     text-align:right;
     color:white;
-  }
+}
   
-  #current-date{
+#current-date{
     position: absolute;
     top: 95px;
     left: -10px;
@@ -182,9 +191,9 @@ body {
     font-weight: bold;
     text-align:right;
     color:white;
-  }
+}
   
-  #mathematics{
+#mathematics{
     position: absolute;
     top: 120px;
     left: -10px;
@@ -193,15 +202,44 @@ body {
     font-weight: bold;
     text-align:right;
     color:white;
-  }
+}
 
-  .navbar-toggler{
+.navbar-toggler{
     border-color: white;
-  }
+}
   
-  .navbar-toggler-icon{
+.navbar-toggler-icon{
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-   }
+}
+
+.social_icon {
+    height: 50px;
+    display:block;
+}
+
+.social_icon a:first-of-type {
+    margin: 0;
+}
+
+.fa-twitter {
+    color:cyan;
+    font-size: 40px;
+}
+
+.fa-youtube {
+    color:red;
+    font-size: 40px;
+}
+
+.fa-facebook {
+    color:rgb(14, 166, 226);
+    font-size: 40px;
+}
+
+.fa-linkedin {
+    color:rgb(143, 230, 93);
+    font-size: 40px;
+}
 
 @media (max-width: 500px) {
     .type {
@@ -219,6 +257,11 @@ body {
     }
     .type .type-details input[type="text"] {
         margin-bottom: 0px;
+    }
+
+    #mathematics{
+        max-width: 170px;
+        right: 0px;
     }
 }
 
@@ -254,7 +297,6 @@ body {
         color: white !important;
         font-weight: bold;
         background-color: black;
-        /* opacity: 0.6; */
         width: 150px;
         margin-left: 0px;
       }
