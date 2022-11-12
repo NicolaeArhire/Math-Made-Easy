@@ -26,11 +26,11 @@ date.innerHTML = new Date().toLocaleDateString();
 
 const locationEl = document.getElementById('location')
 
-fetch('http://ip-api.com/json/?fields=61439')
-    .then((res) => res.json())
-    .then((res) => {
-        locationEl.textContent = res.city + ', ' + res.country;
-    })
+// fetch('http://ip-api.com/json/?fields=61439')
+//     .then((res) => res.json())
+//     .then((res) => {
+//         locationEl.textContent = res.city + ', ' + res.country;
+//     })
 
 
 let math = document.getElementById('mathematics');

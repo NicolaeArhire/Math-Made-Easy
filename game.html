@@ -24,19 +24,13 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mb-2 mb-md-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./home.html">Home</a>
+            <a class="nav-link active" id="nav-link-home" aria-current="page" href="./home.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./references.html">References</a>
+            <a class="nav-link active" aria-current="page" href="./game.html" id="main-button">Let's play a game</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./game.html" style="color:black; border: 2px solid black; border-radius: 10px; text-decoration:underline; font-weight: bold; background-color: rgb(111, 158, 247);">Let's play a game</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./about.html">About</a>
-            </li>
             <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./contact.html">Contact</a>
+            <a class="nav-link active" id="nav-link-contact" aria-current="page" href="./contact.html">Contact</a>
             </li>
         </ul>
     </div>
@@ -47,7 +41,7 @@
 <main>
 
  <div class="logo">
-  <img src="./img/logo.png" style="border-radius:20px" alt="logo.png">
+  <img src="./img/logo.png" class="logo-style" alt="logo.png">
  </div>
  <div id="current-time"></div>
  <div id="current-date"></div>
@@ -56,7 +50,7 @@
 
 
  <div class="intro">
-     <p class="magic">In this mathemagical game you have to secretly choose a number between <b style="color:yellow">1</b> and <b style="color:yellow">60</b> and pick every one of the below cards that contain your number. Finally, press "Done".
+     <p class="magic">In this mathemagical game you have to secretly choose a number between <b class="no1-60">1</b> and <b class="no1-60">60</b> and pick every one of the below cards that contain your number. Finally, press "Done".
        <br>Then, by magic and hours of studying math, i'll find out your number. Let's begin:</p>
  </div>
 
@@ -98,7 +92,7 @@
  </div>
 <div class="last">
   <button class="checkend" id="done" onclick="showAnswer()">Done</button>
-  <button class="checkend2" id="reload" style="margin-left:20px" onclick="deleteAnswer()">Try again</button>
+  <button class="checkend2" id="reload" onclick="deleteAnswer()">Try again</button>
 </div>
  <div class="answer">
   <p class="youranswer">And your secret number is.....</p>
@@ -108,7 +102,7 @@
 </div>
  <div class="outro">
      <p class="magic2">Awesome, right? <br>Start your math journey now and you can amaze your friends too.</p>
-       <p class="magic2" style="text-decoration: underline"><a aria-current="page" href="https://mathworld.wolfram.com/" target="_blank" style="color:yellow">Goodluck!</a></p>
+       <p class="goodluck"><a aria-current="page" href="https://mathworld.wolfram.com/" target="_blank" class="goodluck-text">Goodluck!</a></p>
  </div>
 </main>
     <script src="./bootstrap.bundle.min.js"></script>  

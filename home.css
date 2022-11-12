@@ -178,8 +178,18 @@ body {
 
   .nav-link:hover {
     text-decoration: underline;
-    color: rgb(0, 0, 0) !important;
+    color: rgb(255, 255, 255);
   }
+
+  #main-button {
+    color:black; 
+    border: 2px solid black; 
+    border-radius: 10px; 
+    text-decoration:underline; 
+    font-weight: bold; 
+    background-color: rgb(111, 158, 247);
+    width: 70px;
+}
 
   .navbar-collapse{
     flex-basis: 100% !important;
@@ -237,10 +247,14 @@ body {
   max-height: 550px !important;
 }
 
-  .logo-img {
-    width: 475px;
-    height: 250px;
-    padding: 15px;
+.logo-img {
+  width: 475px;
+  height: 250px;
+  padding: 15px;
+}
+
+.logo-style {
+  border-radius:20px;
 }
 
 section {
@@ -279,7 +293,7 @@ section {
 }
 
 #link {
-  color: blue;
+  color: yellow;
   display:inline;
     text-decoration: underline;
 }
@@ -303,6 +317,7 @@ section {
   font-size: 50px;
   margin-top: 150px;
   color: white;
+  color:chartreuse;
 }
 
 @media(prefers-reduced-motion) {
@@ -370,9 +385,12 @@ section {
     color: white;
     font-weight: bold;
     background-color: black;
-    /* opacity: 0.6; */
     width: 150px;
     margin-left: 0px;
+  }
+
+  #nav-link-contact {
+    width: 80px;
   }
 
   .bg-secondary {
@@ -447,7 +465,6 @@ section {
     color: white;
     font-weight: bold;
     background-color: black;
-    /* opacity: 0.6; */
     width: 150px;
     margin-left: 0px;
   }
@@ -459,7 +476,6 @@ section {
   #happy {
     font-size: 30px;
     margin-top: 50px;
-    /* color: white; */
   }
 
   .blockquote{

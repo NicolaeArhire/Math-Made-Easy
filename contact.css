@@ -6,7 +6,6 @@
 }
 
 body {
-    /* display: flex; */
     justify-content: center;
     align-items: center;
     background:black;
@@ -145,7 +144,7 @@ body {
 
 .nav-link:hover {
     text-decoration: underline;
-    color: rgb(0, 0, 0) !important;
+    color: rgb(255, 255, 255);
 }
 
 .navbar-collapse{
@@ -153,13 +152,26 @@ body {
     justify-content: space-around !important;
 }
 
+#nav-link-home {
+    width: 70px;
+}
+
 .button-style:hover {
     color: black !important;
     background: yellow !important;
 }
 
+#main-button {
+    color:black; 
+    border: 2px solid black; 
+    border-radius: 10px; 
+    text-decoration:underline; 
+    font-weight: bold; 
+    background-color: rgb(111, 158, 247);
+    width: 80px;
+}
+
 .logo {
-    /* float: left; */
     left: 100px;
     border-radius: 50px;
  }
@@ -236,9 +248,12 @@ body {
     font-size: 40px;
 }
 
-.fa-linkedin {
-    color:rgb(143, 230, 93);
-    font-size: 40px;
+.fa-google {
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+   -webkit-background-clip: text;
+   background-clip: text;
+   color: transparent;
+   -webkit-text-fill-color: transparent;
 }
 
 @media (max-width: 500px) {
@@ -257,11 +272,6 @@ body {
     }
     .type .type-details input[type="text"] {
         margin-bottom: 0px;
-    }
-
-    #mathematics{
-        max-width: 170px;
-        right: 0px;
     }
 }
 
@@ -294,12 +304,15 @@ body {
       }
     
       .nav-link.active {
-        color: white !important;
         font-weight: bold;
         background-color: black;
         width: 150px;
         margin-left: 0px;
       }
+
+      #nav-link-home {
+        width: 70px;
+    }
  
     .bg-secondary {
       --bs-bg-opacity: 0;

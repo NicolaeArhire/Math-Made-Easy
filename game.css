@@ -53,6 +53,15 @@ body {
     margin-left: 25px;
   }
 
+  .logo-style {
+    border-radius:20px;
+  }
+
+  .no1-60 {
+    color:yellow;
+
+  }
+
   .intro{
     margin-top: 10rem;
     margin-bottom: 2.5rem;
@@ -107,15 +116,39 @@ body {
     color: white;
   }
 
+  .goodluck{
+    font-size: 1.25rem;
+    font-family: Roboto;
+    color: white;
+    text-decoration: underline;
+  }
+
+  .goodluck-text{
+    color:yellow;
+  }
+
+  .goodluck-text:hover{
+    color:yellow;
+  }
+
   .nav-link:hover {
     text-decoration: underline;
-    color: rgb(0, 0, 0) !important;
+    color: rgb(255, 255, 255);
   }
 
   .navbar-collapse{
     flex-basis: 100% !important;
     justify-content: space-around !important;
   }
+
+  #main-button {
+    color:black; 
+    border: 2px solid black; 
+    border-radius: 10px; 
+    text-decoration:underline; 
+    font-weight: bold; 
+    background-color: rgb(111, 158, 247);
+}
 
   .numbers {
     display:inline-flex;
@@ -169,6 +202,7 @@ body {
     background: yellow;
     font-weight: bolder;
     border-radius: 5px;
+    margin-left:20px;
   }
 
   .checkend2:active {
@@ -196,12 +230,18 @@ body {
     }
   
     .nav-link.active {
-      color: white !important;
       font-weight: bold;
       background-color: black;
-      /* opacity: 0.6; */
       width: 150px;
       margin-left: 0px;
+    }
+
+    #nav-link-home {
+      width: 70px;
+    }
+
+    #nav-link-contact {
+      width: 80px;
     }
 
     .bg-secondary {
