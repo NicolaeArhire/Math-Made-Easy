@@ -1,58 +1,38 @@
-let time = document.getElementById('current-time');
+let magic = document.getElementById("secret");
+let secretText = document.getElementById("secret_text");
+let loader = document.getElementsByClassName("loader")[0];
+let outro = document.getElementsByClassName("outro")[0];
 
-setInterval(() =>{
-    time.innerHTML = new Date().toLocaleTimeString();
-},10);
-
-let date = document.getElementById('current-date');
-date.innerHTML = new Date().toLocaleDateString();
-
-let math = document.getElementById('mathematics');
-let currentday = new Date();
-let math2 = new Date(currentday.getFullYear(), 2, 14);
-
-if (currentday.getMonth()==2 && currentday.getDate()>14)
-{
-    math2.setFullYear(math2.getFullYear()+1);
-};
-
-const day = 1000*60*60*24;
-math.textContent = Math.abs(Math.ceil((math2.getTime()-currentday.getTime())/(day))+366) + ' days left until Maths Day!';
-
-
-let magic = document.getElementById('secret');
-let gif = document.createElement('img');
+outro.style.display = "none";
 
 function showAnswer() {
-    let boxCheck = document.getElementsByClassName("checkbox");
-    let total=0;
-    for (let i=0; i < boxCheck.length; i++) {
-        if (parseInt(boxCheck[i].value) && boxCheck[i].checked)
-            total += parseInt(boxCheck[i].value);
-    }
-    magic.textContent = total;
-    document.getElementById("gif").style.display = 'none';
+  let boxCheck = document.getElementsByClassName("checkbox");
+  let total = 0;
+  for (let i = 0; i < boxCheck.length; i++) {
+    if (parseInt(boxCheck[i].value) && boxCheck[i].checked) total += parseInt(boxCheck[i].value);
+  }
+  magic.textContent = total;
+  loader.style.display = "none";
 
-        if(document.querySelectorAll('input[type="checkbox"]:checked').length == 0) {
-        magic.textContent = "(please select at least one card)";
-        document.getElementById("gif").style.display = 'none';
-    }
-};
+  if (document.querySelectorAll('input[type="checkbox"]:checked').length == 0) {
+    magic.textContent = "Please select at least one card!";
+    loader.style.display = "none";
+    secretText.style.display = "none";
+  } else if (magic.textContent > 0) {
+    secretText.style.display = "flex";
+    outro.style.display = "flex";
+    outro.scrollIntoView({ behavior: "smooth" });
+  }
+}
 
 function deleteAnswer(uncheckBoxes) {
-    let verifyBoxes = document.getElementsByClassName("checkbox");
-        for (let i = 0; i < verifyBoxes.length; i++) {
-            verifyBoxes[i].checked = uncheckBoxes;
-        }
-    magic.textContent = '';
-    document.getElementById("gif").style.display = 'flex';
-    document.getElementById("gif").style.width = "35";
-};
-
-// let element = document.querySelectorAll(".nav-link");
-
-// element.addEventListener("click", myFunction);
-
-// function myFunction() {
-//   document.getElementById("c1").style.color = "red";
-// }
+  let verifyBoxes = document.getElementsByClassName("checkbox");
+  for (let i = 0; i < verifyBoxes.length; i++) {
+    verifyBoxes[i].checked = uncheckBoxes;
+  }
+  magic.textContent = "";
+  secretText.style.display = "flex";
+  loader.style.display = "flex";
+  loader.style.width = "35";
+  outro.style.display = "none";
+}
